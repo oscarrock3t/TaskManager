@@ -1,0 +1,176 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background: #E1E2E1;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 90px;
+	background-color: #00a9ec;
+	margin-bottom: 10px;
+
+	border: 3px  #fff solid;
+	border-top: 0;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+main {
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 10px;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+ul.nav-buttons {
+	display: flex;
+}
+
+li.nav-button {
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+li.nav-button a {
+	color: #fff;
+	height:  90px;
+	line-height: 90px;
+	display: block;
+	user-select: none;
+	cursor:  pointer;
+	transition: background-color .1s ease;
+}
+
+li.nav-button a:hover {
+	background-color: rgba(0,0,0,.2);
+	text-decoration: underline;
+}
+
+.logo {
+	cursor: pointer;
+	height: 90px;
+}
+
+.logo img {
+	height: 100%;
+	border-bottom-left-radius: 15px;
+}
+
+.tasks-box {
+	padding: 5px;
+}
+
+.insertbox {
+	margin-bottom: 10px;
+}
+
+.insertbox form {
+	display: flex;
+	justify-content:  space-between;
+}
+
+.insertbox textarea {
+	font-family: 'Inter', sans-serif;
+	border-radius: 5px;
+	border:  none;
+	resize: none;
+	padding:  5px;
+}
+
+.insertbox textarea:focus {
+	outline: none;
+}
+
+.insertbox-submit {
+	display: block;
+	font-family: 'Inter', sans-serif;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.post {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255,255,255,.2);
+	margin-bottom: 10px;
+	border-radius:  5px;
+	box-shadow: 1px 1px 5px #000;
+	box-sizing: border-box;
+	padding:  10px;
+	text-align: justify;
+	transition: transform .15s ease;
+}
+
+.post:hover {
+	transform: scale(1.01);
+}
+
+.post-content {
+	width: 80%;
+}
+
+.post-text {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.post-time {
+	font-size: .8em;
+}
+
+.post-status {
+	margin-bottom: 5px;
+}
+
+.task-inProgress {
+	border-left: 3px solid navy;
+}
+
+.task-planned {
+	border-left: 3px solid orange;
+}
+
+.task-done {
+	border-left: 3px solid #0f0;
+}
+
+.btn-post {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	width: 15px;
+	margin-right: 10px;
+}
+
+.btn-post img {
+	width: 100%;
+	height: 100%;
+}
+
+.profile {
+	height: 150px;
+	background-color:#65dcff;
+}
+
+.hidden {
+	display: none;
+}
